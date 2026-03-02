@@ -19,62 +19,63 @@ import { HiInboxArrowDown } from "react-icons/hi2";
 
 const Home = () => {
   return (
-    <div className='min-h-screen bg-slate-800 text-white font-tektur flex flex-col px-4 gap-10 py-10'>
+    <div className='min-h-screen  bg-slate-00 text-black font-tektur flex flex-col px-4 gap-14 py-10'>
 
-     {/* Hero Section */}
-<div className='w-full mt-10 max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-10'>
+      {/* Hero Section */}
+      <div className='w-full mt-10 max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-10 '>
 
-  {/* Text Section */}
-  <div className='w-full md:w-1/2 flex flex-col gap-6 text-center md:text-left relative'>
-    
-    {/* Animated Background Circle */}
-    <div className='absolute -top-10 -left-10'>
-      <div className='h-40 w-40 bg-sky-600 rounded-full opacity-30 animate-ping' style={{ animationDuration: '3s' }}></div>
-    </div>
+        {/* Text Section */}
+        <div className='w-full md:w-1/2 flex flex-col gap-6 text-center md:text-left relative '>
 
-    <h2 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight'>
-      Enterprise
-      <span className='text-violet-600'> Cloud Solutions for Modern Business</span>
-    </h2>
+          {/* Animated Background Circle */}
+          <div className='absolute -top-10 -left-10'>
+            <div className='h-40 w-40 bg-sky-600 rounded-full opacity-30 animate-ping' style={{ animationDuration: '3s' }}></div>
+          </div>
 
-    <p className='text-base sm:text-lg md:text-xl text-gray-300'>
-      Cloud Solutions delivers enterprise-grade cloud consulting with AWS, Azure & GCP certified architects. Trusted by 100+ organizations to reduce cloud costs by up to 50% while ensuring 99.9% uptime with our proven methodology.
-    </p>
+          <h2 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight'>
+            Enterprise
+            <span className='text-violet-600'> Cloud Solutions for Modern Business</span>
+          </h2>
 
-    <div className='flex justify-center md:justify-start'>
-      <button className='flex items-center gap-2 text-base sm:text-lg md:text-xl font-semibold bg-violet-600 hover:bg-violet-800 py-2 sm:py-3 px-4 sm:px-6 rounded-md rounded-br-2xl border-2 border-violet-400 transition-all duration-300'>
-        GET STARTED
-        <CgArrowsExpandUpRight className='text-xl sm:text-2xl' />
-      </button>
-    </div>
-  </div>
+          <p className='text-base sm:text-lg md:text-xl text-black'>
+            Cloud Solutions delivers enterprise-grade cloud consulting with AWS, Azure & GCP certified architects. Trusted by 100+ organizations to reduce cloud costs by up to 50% while ensuring 99.9% uptime with our proven methodology.
+          </p>
 
-  {/* Image Section */}
-  <div className='w-full md:w-1/2 flex justify-center relative'>
+          <div className='flex justify-center md:justify-start'>
+            <button className='flex items-center gap-2 text-base sm:text-lg md:text-xl font-semibold bg-violet-600 hover:bg-violet-800 py-2 sm:py-3 px-4 sm:px-6 rounded-md text-white border-2 border-violet-400 transition-all duration-300'>
+              GET STARTED
+              <CgArrowsExpandUpRight className='text-xl sm:text-2xl' />
+            </button>
+          </div>
+        </div>
 
-    {/* Animated Bottom Circle */}
-    <div className='absolute -bottom-10'>
-      <div 
-        className='h-40 w-40 bg-sky-700 rounded-full opacity-30 animate-ping'
-        style={{ animationDuration: '2.5s' }}
-      ></div>
-    </div>
+        {/* Image Section */}
+        <div className='w-full md:w-1/2 flex justify-center relative'>
 
-    <img
-      src={homeimg}
-      alt="Animated Visual"
-      className='w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl animate-float relative z-10'
-    />
-  </div>
-  <div className='absolute -bootam-10 -left-10'>
-      <div className='h-40 w-40 bg-sky-600 rounded-full opacity-30 animate-ping' style={{ animationDuration: '3s' }}></div>
-    </div>
-</div>
+          {/* Animated Bottom Circle */}
+          <div className='absolute -bottom-10'>
+            <div
+              className='h-40 w-40 bg-sky-700 rounded-full opacity-30 animate-ping'
+              style={{ animationDuration: '2.5s' }}
+            ></div>
+          </div>
+
+          <img
+            src={homeimg}
+            alt="Animated Visual"
+            className='w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl animate-float relative z-10'
+          />
+        </div>
+        
+        <div className='absolute -bootam-10 -left-10'>
+          <div className='h-40 w-40 bg-sky-600 rounded-full opacity-30 animate-ping' style={{ animationDuration: '3s' }}></div>
+        </div>
+      </div>
 
 
 
       {/* Cloud Provider Logos Section */}
-      <div className="w-full flex flex-wrap items-center justify-center sm:justify-between gap-6 sm:gap-10 px-4 sm:px-10 lg:px-20 mt-10 rounded-md shadow-2xl bg-slate-700  py-6">
+      <div className="w-full flex flex-wrap items-center justify-center sm:justify-between gap-6 sm:gap-10 px-4 sm:px-10 lg:px-20 mt-10 rounded-md shadow-2xl bg-slate-700   py-6">
         {/* AWS */}
         <div className="flex items-center justify-center w-14 sm:w-20 md:w-20">
           <img src={aws} alt="AWS" className="w-full h-auto object-contain" />
@@ -106,13 +107,13 @@ const Home = () => {
         <div className='w-full lg:w-[50%] flex flex-col-reverse lg:flex-col'>
           {/* Buttons (shown below on mobile, above on desktop) */}
           <div className='flex gap-2 sm:gap-4 md:gap-6 justify-center lg:justify-start flex-wrap mt-6 lg:mt-0'>
-            <button className='hover:bg-violet-600  uppercase duration-300 hover:scale-105 transition-transform py-1.5 px-3 sm:px-4 border-2 border-violet-600 rounded-md rounded-br-2xl text-xs sm:text-sm'>
+            <button className='hover:bg-violet-600  uppercase duration-300 hover:scale-105 transition-transform py-1.5 px-3 sm:px-4 border-2 border-violet-600 rounded-md  hover:text-white text-xs sm:text-sm'>
               Analytics
             </button>
-            <button className='hover:bg-violet-600 uppercase duration-300 hover:scale-105 transition-transform py-1.5 px-3 sm:px-4 border-2 border-violet-600 rounded-md rounded-br-2xl text-xs sm:text-sm'>
+            <button className='hover:bg-violet-600 uppercase duration-300 hover:scale-105 transition-transform py-1.5 px-3 sm:px-4 border-2 border-violet-600 rounded-md  hover:text-white text-xs sm:text-sm'>
               Support & Maintenance
             </button>
-            <button className='hover:bg-violet-600 uppercase duration-300 hover:scale-105 transition-transform py-1.5 px-3 sm:px-4 border-2 border-violet-600 rounded-md rounded-br-2xl text-xs sm:text-sm'>
+            <button className='hover:bg-violet-600 uppercase duration-300 hover:scale-105 transition-transform py-1.5 px-3 sm:px-4 border-2 border-violet-600 rounded-md  hover:text-white text-xs sm:text-sm'>
               Reporting
             </button>
           </div>
@@ -122,7 +123,7 @@ const Home = () => {
             <h2 className='text-2xl sm:text-3xl md:text-4xl uppercase text-center lg:text-left'>
               24/7 support & control maintenance
             </h2>
-            <p className='text-white/60 text-sm sm:text-base text-center lg:text-left'>
+            <p className='text-sm sm:text-base text-center lg:text-left text-black/60'>
               Discover how our expertise in cloud services and cybersecurity can help you achieve your goals. Contact our team for a free consultation and take the first step towards innovation.
             </p>
           </div>
@@ -139,13 +140,13 @@ const Home = () => {
         {/* Header Section */}
         <div className="text-center">
           <h2 className="text-3xl sm:text-5xl font-bold">Enterprise Cloud & AWS Solutions</h2>
-          <p className="text-sm sm:text-lg mt-2 text-gray-400">
+          <p className="text-sm sm:text-lg mt-2 text-gray-800">
             Scalable infrastructure. Reliable performance. Expert cloud strategy.
           </p>
         </div>
 
         {/* Content Section */}
-        <div className="w-full bg-slate-900 mt-8 p-6 sm:p-10 rounded-lg flex flex-col md:flex-row justify-between items-center gap-8">
+        <div className="w-full bg-slate-700 mt-8 p-6 sm:p-10 rounded-lg flex flex-col md:flex-row justify-between items-center gap-8">
           {/* Left Section */}
           <div className="w-full md:w-1/2 text-white text-center md:text-left">
             <h2 className="text-2xl sm:text-4xl font-semibold leading-tight">
@@ -153,10 +154,10 @@ const Home = () => {
             </h2>
 
             <div className="flex justify-center md:justify-start gap-3 mt-6 flex-nowrap">
-              <button className="hover:bg-violet-600 border-2 border-violet-500 uppercase duration-300 hover:scale-105 transition-transform py-2 px-3 sm:px-4 rounded-md rounded-br-2xl text-xs sm:text-sm font-medium whitespace-nowrap">
+              <button className="hover:bg-violet-600 border-2 border-violet-500 uppercase duration-300 hover:scale-105 transition-transform py-2 px-3 sm:px-4 rounded-md text-xs sm:text-sm font-medium whitespace-nowrap">
                 What I Do
               </button>
-              <button className="hover:bg-violet-600 border-2 border-violet-500 uppercase duration-300 hover:scale-105 transition-transform py-2 px-3 sm:px-4 rounded-md rounded-br-2xl text-xs sm:text-sm font-medium whitespace-nowrap">
+              <button className="hover:bg-violet-600 border-2 border-violet-500 uppercase duration-300 hover:scale-105 transition-transform py-2 px-3 sm:px-4 rounded-md text-xs sm:text-sm font-medium whitespace-nowrap">
                 My Expertise
               </button>
             </div>
@@ -424,7 +425,7 @@ const Home = () => {
         </div>
       </div>
       {/* Free Consultation section  */}
-      <div className="w-full mx-auto bg-slate-900 mt-10 p-6 sm:p-10 rounded-lg flex flex-col justify-between items-center gap-8">
+      <div className="w-full mx-auto bg-slate-700 mt-10 p-6 sm:p-10 rounded-lg flex flex-col justify-between items-center gap-8">
 
         {/* 🟣 Inner Container */}
         <div className="w-full md:w-11/12 flex flex-col md:flex-row justify-between items-center gap-6 md:gap-10">
@@ -450,7 +451,7 @@ const Home = () => {
             />
 
             <button
-              className="uppercase duration-300 hover:scale-105 transition-transform py-2 px-5 border-2 border-violet-600 rounded-md rounded-br-2xl text-xs sm:text-sm md:text-base text-white 
+              className="uppercase duration-300 hover:scale-105 transition-transform py-2 px-5 border-2 border-violet-600 rounded-md  text-xs sm:text-sm md:text-base text-white 
         hover:bg-violet-600 shadow-[0_4px_6px_0_rgba(124,58,237,0.4)]"
             >
               Sign Up
@@ -459,7 +460,7 @@ const Home = () => {
 
         </div>
       </div>
-      
+
     </div>
 
   );

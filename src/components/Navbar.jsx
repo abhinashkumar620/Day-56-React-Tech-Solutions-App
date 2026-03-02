@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { FaToggleOn, FaToggleOff } from "react-icons/fa"; // Toggle icons
 import DropdownMenu from "./DropdownMenu";
 import MobileMenu from "./MobileMenu";
-import logo from "../assets/finl.png";
+import logo from "../assets/logo.png";
 
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -25,7 +25,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="bg-dark  text-white font-poppins  p-4 shadow-xl  uppercase sticky z-50 top-0 left-0">
+    <nav className=" bg-gray-50 font-poppins  p-4 shadow-xl  uppercase sticky z-50 top-0 left-0">
       <div className="flex justify-between items-center w-[90%] m-auto">
         {/* Logo */}
         <div className="w-[160px]">

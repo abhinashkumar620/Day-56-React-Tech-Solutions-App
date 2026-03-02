@@ -2,23 +2,34 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-800 px-4 sm:px-6 py-12">
-      <div className="w-full max-w-4xl sm:max-w-5xl bg-gray-900 rounded-2xl shadow-2xl p-6 sm:p-12">
-        <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4 sm:mb-6 text-center">
+    <div className="min-h-screen  bg-white px-4 sm:px-6 py-16">
+      
+      <div className="max-w-5xl  mx-auto bg-white border border-violet-600  
+      rounded-3xl shadow-xl p-6 sm:p-12">
+
+        {/* Heading */}
+        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 text-center">
           Get in Touch
         </h2>
-        <p className="text-gray-300 text-sm sm:text-base text-center mb-6 sm:mb-8">
+
+        <p className="text-gray-600 text-sm sm:text-base text-center 
+        mt-4 max-w-2xl mx-auto">
           Fill out the form below to book a consultation or a POC for your organization.  
           We’ll get back to you promptly.
         </p>
 
-        <form className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
+        {/* Form */}
+        <form className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
+
           {/* Name */}
           <input
             type="text"
             placeholder="Your Name"
             required
-            className="w-full p-3 sm:p-4 rounded-lg bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-violet-600 text-sm sm:text-base"
+            className="w-full p-4 rounded-xl border border-gray-300 
+            bg-white text-gray-900 placeholder-gray-400
+            focus:outline-none focus:ring-2 focus:ring-violet-600 
+            focus:border-violet-600 transition-all duration-200"
           />
 
           {/* Email */}
@@ -26,7 +37,10 @@ const Contact = () => {
             type="email"
             placeholder="Your Email"
             required
-            className="w-full p-3 sm:p-4 rounded-lg bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-violet-600 text-sm sm:text-base"
+            className="w-full p-4 rounded-xl border border-gray-300 
+            bg-white text-gray-900 placeholder-gray-400
+            focus:outline-none focus:ring-2 focus:ring-violet-600 
+            focus:border-violet-600 transition-all duration-200"
           />
 
           {/* Company */}
@@ -34,7 +48,10 @@ const Contact = () => {
             type="text"
             placeholder="Company Name"
             required
-            className="w-full p-3 sm:p-4 rounded-lg bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-violet-600 text-sm sm:text-base"
+            className="w-full p-4 rounded-xl border border-gray-300 
+            bg-white text-gray-900 placeholder-gray-400
+            focus:outline-none focus:ring-2 focus:ring-violet-600 
+            focus:border-violet-600 transition-all duration-200"
           />
 
           {/* Phone */}
@@ -42,21 +59,30 @@ const Contact = () => {
             type="tel"
             placeholder="Phone Number"
             required
-            className="w-full p-3 sm:p-4 rounded-lg bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-violet-600 text-sm sm:text-base"
+            className="w-full p-4 rounded-xl border border-gray-300 
+            bg-white text-gray-900 placeholder-gray-400
+            focus:outline-none focus:ring-2 focus:ring-violet-600 
+            focus:border-violet-600 transition-all duration-200"
           />
 
-          {/* Location / Address */}
+          {/* Location */}
           <input
             type="text"
             placeholder="Location / Address"
             required
-            className="w-full p-3 sm:p-4 rounded-lg bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-violet-600 text-sm sm:text-base"
+            className="w-full p-4 rounded-xl border border-gray-300 
+            bg-white text-gray-900 placeholder-gray-400
+            focus:outline-none focus:ring-2 focus:ring-violet-600 
+            focus:border-violet-600 transition-all duration-200"
           />
 
           {/* Service Dropdown */}
           <select
             required
-            className="w-full p-3 sm:p-4 rounded-lg bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-violet-600 text-sm sm:text-base"
+            className="w-full p-4 rounded-xl border border-gray-300 
+            bg-white text-gray-900
+            focus:outline-none focus:ring-2 focus:ring-violet-600 
+            focus:border-violet-600 transition-all duration-200"
           >
             <option value="">Select a Service</option>
             <option value="cloud-solutions">Cloud Solutions</option>
@@ -67,23 +93,32 @@ const Contact = () => {
             <option value="consulting">Cloud Consulting</option>
           </select>
 
-          {/* Full width message */}
+          {/* Message */}
           <textarea
             placeholder="Your Message"
             rows={5}
             required
-            className="w-full md:col-span-2 p-3 sm:p-4 rounded-lg bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-violet-600 text-sm sm:text-base"
+            className="w-full md:col-span-2 p-4 rounded-xl border border-gray-300 
+            bg-white text-gray-900 placeholder-gray-400
+            focus:outline-none focus:ring-2 focus:ring-violet-600 
+            focus:border-violet-600 transition-all duration-200"
           ></textarea>
 
-          {/* Submit Button */}
+          {/* Submit */}
           <div className="md:col-span-2 flex justify-center">
             <button
               type="submit"
-              className="bg-violet-600 text-white font-semibold py-2 sm:py-3 px-6 sm:px-10 rounded-lg hover:bg-violet-700 transition-all duration-300 text-sm sm:text-base w-full sm:w-auto"
+              className="bg-violet-600 text-white font-semibold 
+              py-3 px-10 rounded-xl 
+              hover:bg-violet-700 
+              hover:scale-105 
+              transition-all duration-300 
+              shadow-md w-full sm:w-auto"
             >
               Send Message
             </button>
           </div>
+
         </form>
       </div>
     </div>

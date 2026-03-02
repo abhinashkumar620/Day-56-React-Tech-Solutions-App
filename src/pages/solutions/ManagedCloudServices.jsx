@@ -12,30 +12,30 @@ import { BiCheck } from "react-icons/bi";
 
 const ManagedCloudServices = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-800 to-slate-800 text-white font-sans">
+    <div className="min-h-screen bg-white text-gray-900 font-sans">
 
       {/* HERO SECTION */}
       <section className="text-center py-20 sm:py-24 px-4 sm:px-6">
-        <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-tight drop-shadow-lg">
+        <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-tight">
           Managed Cloud Services
         </h1>
 
-        <p className="mt-4 sm:mt-6 text-sm sm:text-lg md:text-xl max-w-3xl mx-auto text-gray-300 leading-relaxed">
+        <p className="mt-6 text-sm sm:text-lg md:text-xl max-w-3xl mx-auto text-gray-600 leading-relaxed">
           Empowering businesses with enterprise-grade Managed Cloud Services built 
-          for performance, security and 24×7 reliability.  
-          <span className="text-violet-400 font-semibold block mt-2 text-sm sm:text-base">
+          for performance, security and 24×7 reliability.
+          <span className="text-violet-600 font-semibold block mt-2 text-sm sm:text-base">
             Trusted Multi-Cloud Partner (AWS • Azure • Google Cloud)
           </span>
         </p>
       </section>
 
       {/* WHAT WE DO */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-14">
-        <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-center text-violet-400 mb-10 sm:mb-14 drop-shadow-md">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 py-14">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-violet-600 mb-14">
           Our Managed Cloud Expertise
         </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {[
             {
               icon: <FaCloud />,
@@ -70,14 +70,17 @@ const ManagedCloudServices = () => {
           ].map((item, index) => (
             <div
               key={index}
-              className="bg-slate-900/60 backdrop-blur-md p-6 sm:p-8 rounded-2xl 
-              shadow-xl border border-slate-700 hover:border-violet-500/60 
-              hover:shadow-violet-500/30 transition-all duration-300 
-              hover:-translate-y-1"
+              className="bg-white p-8 rounded-2xl 
+              border border-gray-200 
+              shadow-md hover:shadow-xl 
+              hover:border-violet-500 
+              transition-all duration-300 hover:-translate-y-2"
             >
-              <div className="text-violet-400 text-4xl sm:text-5xl mb-4 sm:mb-5">{item.icon}</div>
-              <h3 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3 text-white">{item.title}</h3>
-              <p className="text-gray-300 text-xs sm:text-sm md:text-base leading-relaxed">
+              <div className="text-violet-600 text-4xl mb-5">{item.icon}</div>
+              <h3 className="text-lg sm:text-xl font-semibold mb-3">
+                {item.title}
+              </h3>
+              <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
                 {item.desc}
               </p>
             </div>
@@ -86,49 +89,54 @@ const ManagedCloudServices = () => {
       </section>
 
       {/* WHY US */}
-      <section className="bg-slate-900 py-12 sm:py-16 px-4 sm:px-6 mt-8 shadow-inner w-11/12 sm:w-10/12 mx-auto rounded-lg">
-        <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-center text-violet-400 mb-8 sm:mb-12">
-          Why Businesses Trust Us
-        </h2>
+      <section className="bg-gray-50 py-16 px-4 sm:px-6 mt-12">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-violet-600 mb-12">
+            Why Businesses Trust Us
+          </h2>
 
-        <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
-          {[
-            "Certified AWS, Azure & Google Cloud architects",
-            "99.9% uptime with enterprise-grade SLAs",
-            "Proactive monitoring & intelligent alerting",
-            "FinOps-based cost optimization strategies",
-            "End-to-end cloud security & compliance",
-            "Zero-downtime operations & maintenance",
-            "Hybrid & Multi-Cloud deployment expertise",
-            "24/7 dedicated cloud support team",
-          ].map((item, index) => (
-            <div key={index} className="flex gap-3 items-start">
-              <div className="h-6 w-6 sm:h-7 sm:w-7 bg-violet-600 flex items-center justify-center rounded-full shadow-lg">
-                <BiCheck className="text-white text-base sm:text-xl" />
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            {[
+              "Certified AWS, Azure & Google Cloud architects",
+              "99.9% uptime with enterprise-grade SLAs",
+              "Proactive monitoring & intelligent alerting",
+              "FinOps-based cost optimization strategies",
+              "End-to-end cloud security & compliance",
+              "Zero-downtime operations & maintenance",
+              "Hybrid & Multi-Cloud deployment expertise",
+              "24/7 dedicated cloud support team",
+            ].map((item, index) => (
+              <div key={index} className="flex gap-3 items-start">
+                <div className="h-6 w-6 bg-violet-600 flex items-center justify-center rounded-full">
+                  <BiCheck className="text-white text-base" />
+                </div>
+                <p className="text-gray-700 text-sm sm:text-base">
+                  {item}
+                </p>
               </div>
-              <p className="text-gray-300 text-xs sm:text-sm md:text-base">{item}</p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </section>
 
       {/* CTA */}
-      <section className="text-center py-16 sm:py-20 px-4 sm:px-6">
+      <section className="text-center py-20 px-4 sm:px-6">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold">
           Ready to Transform Your Cloud Journey?
         </h2>
-        <p className="text-gray-400 mt-2 sm:mt-3 text-xs sm:text-sm md:text-lg">
+        <p className="text-gray-600 mt-3 text-sm sm:text-base md:text-lg">
           Let certified experts manage your cloud while your team focuses on innovation.
         </p>
 
         <button
-          className="mt-6 sm:mt-8 bg-violet-600 rounded-br-3xl hover:bg-violet-700 text-white 
-          py-2 sm:py-3 px-6 sm:px-10 rounded-lg text-base sm:text-lg font-semibold 
-          transition-all duration-300 shadow-lg hover:shadow-violet-500/40"
+          className="mt-8 bg-violet-600 hover:bg-violet-700 text-white 
+          py-3 px-8 rounded-lg font-semibold 
+          transition-all duration-300 hover:scale-105 shadow-md hover:shadow-lg"
         >
           Talk to Cloud Experts
         </button>
       </section>
+
     </div>
   );
 };

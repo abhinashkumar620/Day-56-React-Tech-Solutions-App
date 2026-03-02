@@ -4,29 +4,33 @@ import { BiCheckCircle } from "react-icons/bi";
 
 const Pinpoint = () => {
   return (
-    <div className="min-h-screen bg-slate-800 text-white font-sans">
+    <div className="min-h-screen bg-white text-gray-900 font-sans">
 
       {/* HERO SECTION */}
-      <section className="relative py-20 sm:py-28 px-4 sm:px-6 text-center overflow-hidden">
-        <div className="absolute inset-0 bg-violet-800/20 blur-3xl animate-pulse"></div>
-        <h1 className="relative text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-tight drop-shadow-lg">
-          Pinpoint Solutions
-        </h1>
-        <p className="relative mt-4 sm:mt-6 text-sm sm:text-lg md:text-xl max-w-3xl mx-auto text-gray-300 leading-relaxed">
-          Accurate insights, real-time analytics, and secure communication to drive business efficiency.
-          <span className="block mt-2 sm:mt-3 text-violet-400 font-semibold">
-            Data-driven strategies for measurable impact.
-          </span>
-        </p>
+      <section className="relative py-20 sm:py-28 px-4 text-center overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-violet-100 via-white to-violet-50"></div>
+
+        <div className="relative max-w-5xl mx-auto">
+          <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-tight">
+            Pinpoint Solutions
+          </h1>
+
+          <p className="mt-6 text-sm sm:text-lg md:text-xl max-w-3xl mx-auto text-gray-600 leading-relaxed">
+            Accurate insights, real-time analytics, and secure communication to drive business efficiency.
+            <span className="block mt-3 text-violet-600 font-semibold">
+              Data-driven strategies for measurable impact.
+            </span>
+          </p>
+        </div>
       </section>
 
       {/* FEATURES SECTION */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 py-16 sm:py-20">
-        <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-center text-violet-400 mb-12 sm:mb-16 drop-shadow-md">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-center text-violet-700 mb-16">
           Pinpoint Key Features
         </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {[
             {
               icon: <FaBullseye />,
@@ -51,57 +55,80 @@ const Pinpoint = () => {
           ].map((item, index) => (
             <div
               key={index}
-              className="bg-slate-900/70 p-6 sm:p-8 rounded-2xl shadow-xl border border-slate-700 
-              hover:border-violet-500/60 hover:shadow-violet-500/20 hover:-translate-y-1 
-              transition-all duration-300 transform-gpu cursor-pointer"
+              className="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm
+              hover:shadow-xl hover:-translate-y-2 transition-all duration-300"
             >
-              <div className="text-violet-400 text-4xl sm:text-5xl mb-4 sm:mb-6 animate-bounce">{item.icon}</div>
-              <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3 text-white">{item.title}</h3>
-              <p className="text-gray-300 text-xs sm:text-sm md:text-base leading-relaxed">{item.desc}</p>
+              <div className="text-violet-600 text-4xl mb-6">
+                {item.icon}
+              </div>
+              <h3 className="text-lg sm:text-xl font-semibold mb-3">
+                {item.title}
+              </h3>
+              <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+                {item.desc}
+              </p>
             </div>
           ))}
         </div>
       </section>
 
       {/* BENEFITS SECTION */}
-      <section className="bg-slate-900 py-16 sm:py-20 px-4 sm:px-6 w-11/12 sm:w-10/12 mx-auto rounded-lg">
-        <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-center text-violet-400 mb-10 sm:mb-14 drop-shadow-md">
-          Why Pinpoint?
-        </h2>
+      <section className="bg-gray-50 py-20 px-4">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-center text-violet-700 mb-14">
+            Why Pinpoint?
+          </h2>
 
-        <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
-          {[
-            "Gain actionable insights in real-time",
-            "Boost campaign efficiency and ROI",
-            "Ensure secure, compliant data management",
-            "Optimize customer engagement and retention",
-            "Integrate seamlessly with your workflows",
-            "Track progress and KPIs dynamically",
-            "Leverage AI-powered predictions for growth",
-            "Simplify operations with intelligent automation",
-          ].map((benefit, index) => (
-            <div key={index} className="flex items-start gap-3 sm:gap-4 animate-fadeIn">
-              <BiCheckCircle className="text-violet-500 text-2xl sm:text-3xl mt-1" />
-              <p className="text-gray-300 text-sm sm:text-base">{benefit}</p>
-            </div>
-          ))}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+            {[
+              "Gain actionable insights in real-time",
+              "Boost campaign efficiency and ROI",
+              "Ensure secure, compliant data management",
+              "Optimize customer engagement and retention",
+              "Integrate seamlessly with your workflows",
+              "Track progress and KPIs dynamically",
+              "Leverage AI-powered predictions for growth",
+              "Simplify operations with intelligent automation",
+            ].map((benefit, index) => (
+              <div key={index} className="flex items-start gap-4">
+                <BiCheckCircle className="text-violet-600 text-2xl mt-1" />
+                <p className="text-gray-700 text-sm sm:text-base">
+                  {benefit}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
       {/* CTA SECTION */}
-      <section className="text-center py-16 sm:py-24 px-4 sm:px-6">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white">
-          Take Control with Pinpoint
-        </h2>
-        <p className="text-gray-400 mt-2 sm:mt-4 text-xs sm:text-sm md:text-lg">
-          Unlock precision, analytics, and secure communication for your business.
-        </p>
+      <section className="w-[90%] mx-auto px-3 sm:px-5 lg:px-7 py-10 sm:py-16">
+  <div className="bg-violet-600 text-white 
+  p-8 sm:p-12 md:p-14 
+  rounded-2xl sm:rounded-3xl 
+  shadow-xl text-center">
 
-        <button className="mt-6 sm:mt-8 bg-violet-600 rounded-br-3xl hover:bg-violet-700 text-white py-2 sm:py-3 px-6 sm:px-10 
-        rounded-lg text-base sm:text-lg font-semibold shadow-lg hover:shadow-violet-500/40 transition-all duration-300 animate-bounce">
-          Get Started with Pinpoint
-        </button>
-      </section>
+    <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight">
+      Take Control with Pinpoint
+    </h2>
+
+    <p className="mt-4 sm:mt-6 text-violet-100 text-sm sm:text-base md:text-lg 
+    max-w-2xl mx-auto leading-relaxed">
+      Unlock precision, analytics, and secure communication for your business.
+    </p>
+
+    <button className="mt-8 sm:mt-10 
+    w-full sm:w-auto 
+    bg-white text-violet-700 
+    px-8 py-3 sm:py-4 
+    rounded-xl font-semibold 
+    hover:scale-105 transition-all duration-300 shadow-md">
+      Get Started Today
+    </button>
+
+  </div>
+</section>
+
     </div>
   );
 };

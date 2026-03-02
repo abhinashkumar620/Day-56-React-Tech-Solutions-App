@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../assets/finl.png'
+import logo from '../assets/logo.png'
 
 
 
@@ -19,7 +19,7 @@ const MobileMenu = ({ toggle }) => {
   ];
 
   return (
-    <div className="fixed top-0 left-0 w-72 h-full bg-dark text-white p-4 z-50 shadow-lg transition-transform transform translate-x-0 md:hidden border-r-2 border-stone-700">
+    <div className="fixed top-0 left-0 w-72 h-full bg-white p-4 z-50 shadow-lg transition-transform transform translate-x-0 md:hidden border-r-2 border-stone-700">
       {/* Close Button */}
       <div className="flex justify-between items-center  mb-6 ">
         <div className='w-[120px]'>
