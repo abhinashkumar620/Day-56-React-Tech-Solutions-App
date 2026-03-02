@@ -25,7 +25,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className=" bg-gray-50 font-poppins  p-4 shadow-xl  uppercase sticky z-50 top-0 left-0">
+    <nav className=" bg-gray-50 font-poppins text-black p-4 shadow-xl  uppercase sticky z-50 top-0 left-0">
       <div className="flex justify-between items-center w-[90%] m-auto">
         {/* Logo */}
         <div className="w-[160px]">

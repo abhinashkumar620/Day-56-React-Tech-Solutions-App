@@ -19,7 +19,7 @@ import { HiInboxArrowDown } from "react-icons/hi2";
 
 const Home = () => {
   return (
-    <div className='min-h-screen  bg-slate-00 text-black font-tektur flex flex-col px-4 gap-14 py-10'>
+    <div className='min-h-screen bg-slate-50  bg-slate-00 text-black font-tektur flex flex-col px-4 gap-14 py-10'>
 
       {/* Hero Section */}
       <div className='w-full mt-10 max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-10 '>
@@ -75,7 +75,7 @@ const Home = () => {
 
 
       {/* Cloud Provider Logos Section */}
-      <div className="w-full flex flex-wrap items-center justify-center sm:justify-between gap-6 sm:gap-10 px-4 sm:px-10 lg:px-20 mt-10 rounded-md shadow-2xl bg-slate-700   py-6">
+      <div className="w-full flex flex-wrap items-center justify-center sm:justify-between gap-6 sm:gap-10 px-4 sm:px-10 lg:px-20 mt-10 rounded-md shadow-2xl bg-slate-700  py-6">
         {/* AWS */}
         <div className="flex items-center justify-center w-14 sm:w-20 md:w-20">
           <img src={aws} alt="AWS" className="w-full h-auto object-contain" />
